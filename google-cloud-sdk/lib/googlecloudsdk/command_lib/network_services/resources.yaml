@@ -1,0 +1,93 @@
+project:
+  name: project
+  collection: networkservices.projects
+  attributes:
+  - &project
+    parameter_name: projectsId
+    attribute_name: project
+    help: |
+      The project Id.
+    property: core/project
+
+location:
+  name: location
+  collection: networkservices.projects.locations
+  attributes:
+  - *project
+  - &location
+    parameter_name: locationsId
+    attribute_name: location
+    help: |
+      The location Id.
+
+httpFilter:
+  name: http filter
+  collection: networkservices.projects.locations.httpFilters
+  request_id_field: httpFilterId
+  attributes:
+  - *project
+  - *location
+  - &httpFilter
+    parameter_name: httpFiltersId
+    attribute_name: http_filter
+    help: Id of the http filter.
+
+endpointConfigSelector:
+  name: endpoint config selector
+  collection: networkservices.projects.locations.endpointConfigSelectors
+  request_id_field: endpointConfigSelectorId
+  attributes:
+  - *project
+  - *location
+  - &endpointConfigSelector
+    parameter_name: endpointConfigSelectorsId
+    attribute_name: endpoint_config_selector
+    help: Id of the endpoint config selector.
+
+endpointPolicy:
+  name: endpoint policy
+  collection: networkservices.projects.locations.endpointPolicies
+  request_id_field: endpointPolicyId
+  attributes:
+  - *project
+  - *location
+  - &endpointPolicy
+    parameter_name: endpointPoliciesId
+    attribute_name: endpoint_policy
+    help: Id of the endpoint policy.
+
+observabilityPolicy:
+  name: observability policy
+  collection: networkservices.projects.locations.observabilityPolicies
+  request_id_field: observabilityPolicyId
+  attributes:
+  - *project
+  - *location
+  - &observabilityPolicy
+    parameter_name: observabilityPoliciesId
+    attribute_name: observability_policy
+    help: Id of the observability policy.
+
+grpcRoute:
+  name: grpc route
+  collection: networkservices.projects.locations.grpcRoutes
+  request_id_field: grpcRouteId
+  attributes:
+  - *project
+  - *location
+  - &grpcRoute
+    parameter_name: grpcRoutesId
+    attribute_name: grpc_route
+    help: Id of the grpc route.
+
+router:
+  name: router
+  collection: networkservices.projects.locations.routers
+  request_id_field: routerId
+  attributes:
+  - *project
+  - *location
+  - &router
+    parameter_name: routersId
+    attribute_name: router
+    help: Id of the router.

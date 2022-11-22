@@ -1,0 +1,46 @@
+{
+  "components": [
+    {
+      "dependencies": [
+        "app-engine-grpc-darwin-x86_64",
+        "app-engine-grpc-linux-x86",
+        "app-engine-grpc-linux-x86_64",
+        "app-engine-grpc-windows-x86",
+        "app-engine-grpc-windows-x86_64",
+        "app-engine-python",
+        "core"
+      ],
+      "details": {
+        "description": "Provides the gRPC Python library for App Engine.",
+        "display_name": "gRPC Python library"
+      },
+      "id": "app-engine-grpc",
+      "is_configuration": false,
+      "is_hidden": true,
+      "is_required": false,
+      "platform": {
+        "architectures": [
+          "x86",
+          "x86_64"
+        ],
+        "operating_systems": [
+          "LINUX",
+          "MACOSX",
+          "WINDOWS"
+        ]
+      },
+      "platform_required": false,
+      "version": {
+        "build_number": 0,
+        "version_string": "1.20.0"
+      }
+    }
+  ],
+  "revision": 20210521145322,
+  "schema_version": {
+    "no_update": false,
+    "url": "https://dl.google.com/dl/cloudsdk/channels/rapid/google-cloud-sdk.tar.gz",
+    "version": 3
+  },
+  "version": "342.0.0"
+}

@@ -1,0 +1,18 @@
+# Format: google3/devtools/metadata/metadata.proto (go/google3metadata)
+
+name: "docker"
+description: "An API client for docker written in Python"
+
+third_party {
+  url {
+    type: ARCHIVE
+    value: "https://github.com/docker/docker-py/archive/bef23feb71bf27173a71ed9f7d28472ea84958fb.zip"
+  }
+  version: "0f368939def31bfd44218f54a5eff0a599ab8139"
+  last_upgrade_date { year: 2019 month: 6 day: 4 }
+
+  # NOTE: The "local_modifications" field is entirely optional and may be
+  # removed if it's not useful for the package.
+  #     See go/thirdparty-metadata-local-modifications
+  local_modifications: "http://google3/third_party/py/docker/README.google?cl=109095371"
+}

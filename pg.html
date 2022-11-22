@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        font-family: Poppins;
+    }
+    h1{
+        margin-left:15%;
+        background: #330EB3;
+        color: white;
+        height: 60px;
+        padding-top: 1%;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+    }
+    .container{
+        float: left;
+        margin-left:20%;
+        width: 40%;
+    }
+    .form{
+       display: inline;
+       
+    }
+    input{
+        margin-right: 5%;
+        margin-top: 4%;
+        height: 30px;
+        margin-left: 3%;
+        background: rgba(51, 14, 179, 0.16);
+        border-radius: 15px;
+    }
+    label{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 164%;
+        
+    }
+    select{
+        margin-right: 5%;
+        height: 30px;
+        margin-left: 3%;
+        background: rgba(51, 14, 179, 0.16);
+        border-radius: 15px;
+    }
+    span{
+        margin-left: -5% ;
+        font-family: Poppins;
+        font-style: normal;
+        width: 218px;
+        height: 30px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 164%;
+        color: #534444;
+    }
+    .submit{
+        background: #330EB3;
+        width: 236px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 164%;height: 41px;
+        color: white;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+        margin-top: 20%;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 8%;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 164%;
+    }
+    .sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 15%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #330EB3; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  width: 50%;
+  
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 4%;
+  margin-left: 13%;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 164%;
+
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+  background: rgba(222, 216, 243, 0.52);
+border-radius: 23px
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+.title{
+    color: white;
+    height: 60px;
+        padding-top: 1%;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        margin-left:3%;
+   }
+   .input{
+       float: left;
+       margin-top: 8%;
+       margin-left: 18%;
+       width: 65%;
+   }
+   span{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 164%;
+color: #000000;
+margin-left: 0.2%;
+   }
+   p{
+    font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 164%;
+color: #000000;
+margin-top: 3.5%;
+   }
+   button{
+    margin-top: 4%;
+}
+ .btn1{
+    background: #330EB3;
+border-radius: 15px;
+width: 100px;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 164%;
+/* identical to box height, or 41px */
+
+color: white;
+align-items: center;
+text-align: center;
+ }
+
+ .btn2{
+    background: #330EB3;
+border-radius: 15px;
+width: 348px;
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 164%;
+margin-left: 9%;
+/* identical to box height, or 41px */
+
+align-items: center;
+text-align: center;
+color: white;
+
+ }
+/* identical to box height, or 41px */
+
+
+align-items: center;
+text-align: center;
+   }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 450px) {
+  .sidenav {padding-top: 15px;
+            width: 25%;}
+  .sidenav a {font-size: 12px;}
+  h1{
+      margin-left: 25% ;
+  }
+  .title{
+      font-size: 18px;
+      margin-left: 10%;
+  }
+  h2{
+      font-size: 15px;
+      margin-top: 30%;
+  }
+  .container{
+    margin-left:35%;
+    width: 40%;
+  }
+  label{
+      font-size: 14px;
+  }
+  .input{
+      height: 100px;
+      
+  }
+  .submit{
+      font-size: 15px;
+      width: 180px;
+      left: 575px;
+      top: 10px;
+      margin-left:50%;
+      
+  }
+}
+     
+</style>
+</head>
+  <form class="form" action="" method="post" enctype="multipart/form-data">
+  <div class="input">
+      <span>Tina</span><br>
+    <p>According to the information provided, we hereby conclude that the user is <b>Mildly Depressed</b>.</p>
+      <p>Further diagnosis can be provided by a professional. Please look for help on our website or conatct us for more details.</p>
+
+      <!-- <button onclick="db.html">VIEW ALL PATIENTS</button>-->
+      <button class="btn1" onclick="db.html">Exit</button>
+      <button class="btn2" onclick="db.html">Generate Another Result</button>
+    </div>
+  </form>
